@@ -1,5 +1,6 @@
 
 import '../App.css';
+import Form from './Form';
 import Header from './Header';
 import SearchBar from './SearchBar';
 
@@ -9,6 +10,7 @@ function App() {
       <div>
         <Header />
         <SearchBar />
+        <Form />
     </div>
   );
 }

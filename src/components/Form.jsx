@@ -1,16 +1,17 @@
-import React from 'react'
+import React from "react";
 
 function Form() {
   return (
-    <form>
-        <div>
-        <input type='text' placeholder='mm/dd/yyyy'></input>
-        <label >Date</label>
-        </div>
-        <input type='text' placeholder='Description'> </input>
-        <input type='text' placeholder='Category'></input>
+    <form className="formInput">
+      <label>Date:</label>
+      <input type="text" placeholder="mm/dd/yyyy" required/>
+
+      <input type='text' placeholder='Description' required/>
+        <input type='text' placeholder='Category' required/>
+        <input type='text' placeholder='Amount' required/>
+        <button type="submit">Add Transaction</button>
     </form>
-  )
+  );
 }
 
-export default Form
+export default Form;

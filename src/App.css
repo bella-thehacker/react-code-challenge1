@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+nav{
+  display: flex;
+  justify-content: center;
+  background-color: purple;
+  color: aliceblue;
+  height: 11rem;
+}
+
+nav h2{
+  padding-top: 1%;
+  font-size: 300%;
+  font-weight: 500;
+}
+
+.searchInput{
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+}
+.searchInput input{
+  width: 95%;
+  height: 4rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 3px;
+  padding-left: 3%;
+  font-size: 200%;
+  border-radius: 12px 12px 12px 12px;
+  color: #444;
+  
+}

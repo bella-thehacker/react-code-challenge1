@@ -97,6 +97,97 @@
       "description": "electricity ",
       "category": "bills",
       "amount": "3000"
+    },
+    {
+      "id": "e49f",
+      "date": "2024-08-20",
+      "description": "Games",
+      "category": "entertainment",
+      "amount": "1200"
+    },
+    {
+      "id": "2c4e",
+      "date": "2024-08-08",
+      "description": "tomatoes",
+      "category": "groceries",
+      "amount": "100"
+    },
+    {
+      "id": "c2c9",
+      "date": "2024-08-08",
+      "description": "tomatoes",
+      "category": "groceries",
+      "amount": "100"
+    },
+    {
+      "id": "cd83",
+      "date": "2024-08-14",
+      "description": "Volunteering ",
+      "category": "xkmc",
+      "amount": "333"
+    },
+    {
+      "id": "d7e9",
+      "date": "2024-08-19",
+      "description": "tacos",
+      "category": "food",
+      "amount": "555"
+    },
+    {
+      "id": "5d95",
+      "date": "2024-08-29",
+      "description": "toothbrush",
+      "category": "groceries",
+      "amount": "300"
+    },
+    {
+      "id": "b842",
+      "date": "2024-08-22",
+      "description": "Movie Tickets",
+      "category": "xkmc",
+      "amount": "444"
+    },
+    {
+      "id": "8607",
+      "date": "2024-08-20",
+      "description": "Volunteering ",
+      "category": "groceries",
+      "amount": "333"
+    },
+    {
+      "id": "ea58",
+      "date": "2024-08-24",
+      "description": "electricity ",
+      "category": "bills",
+      "amount": "433"
+    },
+    {
+      "id": "730d",
+      "date": "2024-08-23",
+      "description": "Movie Tickets",
+      "category": "xkmc",
+      "amount": "433"
+    },
+    {
+      "id": "12f1",
+      "date": "2024-08-10",
+      "description": "Movie Tickets",
+      "category": "344",
+      "amount": "443"
+    },
+    {
+      "id": "d313",
+      "date": "2024-08-15",
+      "description": "tomatoes",
+      "category": "groceries",
+      "amount": "8799"
+    },
+    {
+      "id": "f06a",
+      "date": "2024-09-25",
+      "description": "carpayment",
+      "category": "bills",
+      "amount": "3000"
     }
   ]
 }

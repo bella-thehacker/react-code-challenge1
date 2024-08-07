@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Display({date, description, category, amount}) {
+  
   return (
     
    <tr>

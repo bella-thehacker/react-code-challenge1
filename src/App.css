@@ -55,16 +55,38 @@ nav h2 {
   display: flex;
   justify-content: center;
   padding-top: 2%;
+  background-color: white;
+  border-radius: 10px;
+  height: 4rem;
+  width: 95%;
+  border-radius: 12px 12px 12px 12px;
+  border: #000 solid 1px; 
+  margin-top: 4%;
+}
+
+.search-icon{
+  
+  margin-left: 8%;
+  font-size: 115%;
+  padding-right: 0%;
+  color: purple;
+  
 }
 .searchInput input {
-  width: 95%;
+  width: 80%;
   height: 4rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   letter-spacing: 3px;
-  padding-left: 3%;
+  padding-left: 1%;
   font-size: 200%;
-  border-radius: 12px 12px 12px 12px;
+  padding-bottom: 2%;
   color: #444;
+  background-color: transparent;
+  border: none;
+}
+
+.searchInput input:focus{
+  outline: none;
 }
 
 .formInput{

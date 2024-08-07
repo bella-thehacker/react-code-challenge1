@@ -1,29 +1,22 @@
-import React from 'react'
-import Get from './Get'
+import React from "react";
 
-function Table() {
+import SearchList from "./SearchList";
+
+function Table({ data }) {
   return (
-   <table className='transactionTable'>
-    <thead>
+    <table className="transactionTable">
+      <thead>
         <tr>
-            <th>
-             Date
-            </th>
-            <th>
-                Description
-            </th>
-            <th>
-                Category
-            </th>
-            <th>
-                Amount
-            </th>
+          <th>Date</th>
+          <th>Description</th>
+          <th>Category</th>
+          <th>Amount</th>
         </tr>
-    
-    </thead>
-    <Get />
-   </table>
-  )
+      </thead>
+
+      <SearchList results={data} />
+    </table>
+  );
 }
 
-export default Table
+export default Table;

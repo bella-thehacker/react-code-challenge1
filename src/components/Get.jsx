@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
-import Display from "./Display";
+import React, { useEffect} from "react"
 
-function Get() {
-  const [transactions, setTransactions] = useState([]);
+function Get({setTransactions}) {
+  
 
   useEffect(() => {
     fetch("http://localhost:3000/transactions")
@@ -11,19 +10,7 @@ function Get() {
       .catch((error) => console.log(error));
   }, []);
 
-  return (
-    <tbody>
-      {transactions.map((transaction) => (
-        <Display
-          key={transaction.id}
-          date={transaction.date}
-          description={transaction.description}
-          category={transaction.category}
-          amount={transaction.amount}
-        />
-      ))}
-    </tbody>
-  );
+  return null
 }
 
 export default Get;

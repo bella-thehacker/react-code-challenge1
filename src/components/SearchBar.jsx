@@ -1,14 +1,36 @@
-import React from 'react'
+import React, { useState } from "react";
+import { FaSearch } from "react-icons/fa";
 
+function SearchBar({ setResults }) {
+  const [search, setSearch] = useState("");
 
-function SearchBar() {
+  const fetchData = (value) => {
+    fetch("http://localhost:3000/transactions")
+      .then((res) => res.json())
+      .then((transactions) => {
+        const results = transactions.filter((transaction) =>
+          transaction.description.toLowerCase().includes(value.toLowerCase())
+        );
+        setResults(results);
+        // console.log(results);
+      })
+      .catch((error) => console.log(error));
+  };
+  const handleChange = (value) => {
+    setSearch(value);
+    fetchData(value);
+  };
   return (
-    <div className='searchInput'>
-        <input type='search' placeholder='Search Your Recent Transactions' >
-        
-        </input>
+    <div className="searchInput">
+      <FaSearch className="search-icon" />{" "}
+      <input
+        type="search"
+        placeholder="Search Your Recent Transactions"
+        value={search}
+        onChange={(e) => handleChange(e.target.value)}
+      ></input>
     </div>
-  )
+  );
 }
 
-export default SearchBar
+export default SearchBar;

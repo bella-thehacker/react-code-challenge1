@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 
-function Form() {
-  const [formData, setPostData] = useState({
+function Form({ transactions, setTransactions }) {
+  const [isPending, setIsPending] = useState(false);
+  const [formData, setFormData] = useState({
     date: "",
     description: "",
     category: "",
     amount: "",
   });
-  
 
   const handleOnChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
 
-    setPostData({
+    setFormData({
       ...formData,
       [name]: value,
     });
@@ -21,22 +21,39 @@ function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    setIsPending(true);
+
     fetch("http://localhost:3000/transactions", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
-        Accept: "application/json",
+       "Accept": "application/json"
       },
-      body: JSON.stringify(formData),
+      body: JSON.stringify(formData)
     })
       .then((res) => res.json())
-      .then((transaction) => console.log(transaction));
+      .then((transaction) => {setTransactions([transaction, ...transactions]);
+
+    setFormData({
+      date: "",
+      description: "",
+      category: "",
+      amount: "",
+    })
+    setIsPending(false)
+  })
   };
 
   return (
     <form onSubmit={handleSubmit} className="formInput">
       <label>Date:</label>
-      <input type="date" name="date" onChange={handleOnChange} value={formData.date} required />
+      <input
+        type="date"
+        name="date"
+        onChange={handleOnChange}
+        value={formData.date}
+        required
+      />
 
       <input
         type="text"
@@ -62,9 +79,13 @@ function Form() {
         value={formData.amount}
         required
       />
-      <button  type="submit">
-        Add Transaction
-      </button>
+      {!isPending && <button type="submit">Add Transaction</button>}
+
+      {isPending && (
+        <button disabled type="submit">
+          Adding Transaction...
+        </button>
+      )}
     </form>
   );
 }

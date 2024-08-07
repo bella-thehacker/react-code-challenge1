@@ -67,6 +67,37 @@ nav h2 {
   color: #444;
 }
 
+.formInput{
+  margin-left: 10%;
+}
+
+.formInput input{
+  margin: 3%;
+  width: 15rem;
+  height: 3rem;
+  color: #444;
+  font-size: 105%;
+  padding-left: 1%;
+  
+}
+
+.formInput button{
+  margin-left: 44%;
+  width: 10rem;
+  height: 3rem;
+  color: #000;
+  margin-bottom: 2%;
+  
+  
+}
+
+.formInput button:hover{
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+  
+}
+
 .transactionTable {
   width: 100%;
   border-collapse: collapse;
@@ -79,14 +110,17 @@ nav h2 {
 }
 
 .transactionTable th{
-  background-color: #f2f;
+  background-color: purple;
   color: white;
   font-weight: 500;
   width: calc(100%/3);
+  padding: 1rem;
+  
 }
 
 .transactionTable td{
   width: calc(100%/3);
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 

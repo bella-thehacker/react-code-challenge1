@@ -27,21 +27,22 @@ function Form({ transactions, setTransactions }) {
       method: "POST",
       headers: {
         "Content-type": "application/json",
-       "Accept": "application/json"
+        Accept: "application/json",
       },
-      body: JSON.stringify(formData)
+      body: JSON.stringify(formData),
     })
       .then((res) => res.json())
-      .then((transaction) => {setTransactions([transaction, ...transactions]);
+      .then((transaction) => {
+        setTransactions((preTransactions) => [transaction, ...preTransactions]);
 
-    setFormData({
-      date: "",
-      description: "",
-      category: "",
-      amount: "",
-    })
-    setIsPending(false)
-  })
+        setFormData({
+          date: "",
+          description: "",
+          category: "",
+          amount: "",
+        });
+        setIsPending(false);
+      });
   };
 
   return (

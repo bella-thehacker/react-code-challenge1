@@ -1,8 +1,6 @@
-import React, { useEffect} from "react"
+import React, { useEffect } from "react";
 
-function Get({setTransactions}) {
-  
-
+function Get({ setTransactions }) {
   useEffect(() => {
     fetch("http://localhost:3000/transactions")
       .then((res) => res.json())
@@ -10,7 +8,7 @@ function Get({setTransactions}) {
       .catch((error) => console.log(error));
   }, []);
 
-  return null
+  return null;
 }
 
 export default Get;

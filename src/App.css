@@ -60,17 +60,15 @@ nav h2 {
   height: 4rem;
   width: 95%;
   border-radius: 12px 12px 12px 12px;
-  border: #000 solid 1px; 
+  border: #000 solid 1px;
   margin-top: 4%;
 }
 
-.search-icon{
-  
+.search-icon {
   margin-left: 8%;
   font-size: 115%;
   padding-right: 0%;
   color: purple;
-  
 }
 .searchInput input {
   width: 80%;
@@ -85,39 +83,35 @@ nav h2 {
   border: none;
 }
 
-.searchInput input:focus{
+.searchInput input:focus {
   outline: none;
 }
 
-.formInput{
+.formInput {
   margin-left: 10%;
 }
 
-.formInput input{
+.formInput input {
   margin: 3%;
   width: 15rem;
   height: 3rem;
   color: #444;
   font-size: 105%;
   padding-left: 1%;
-  
 }
 
-.formInput button{
+.formInput button {
   margin-left: 44%;
   width: 10rem;
   height: 3rem;
   color: #000;
   margin-bottom: 2%;
-  
-  
 }
 
-.formInput button:hover{
+.formInput button:hover {
   background-color: purple;
   color: white;
   cursor: pointer;
-  
 }
 
 .transactionTable {
@@ -131,18 +125,15 @@ nav h2 {
   border: 1px solid black;
 }
 
-.transactionTable th{
+.transactionTable th {
   background-color: purple;
   color: white;
   font-weight: 500;
-  width: calc(100%/3);
+  width: calc(100% / 3);
   padding: 1rem;
-  
 }
 
-.transactionTable td{
-  width: calc(100%/3);
+.transactionTable td {
+  width: calc(100% / 3);
   padding: 1rem 1rem 1rem 1rem;
 }
-
-

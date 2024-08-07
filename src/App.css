@@ -37,7 +37,7 @@
   }
 }
 
-nav{
+nav {
   display: flex;
   justify-content: center;
   background-color: purple;
@@ -45,25 +45,46 @@ nav{
   height: 11rem;
 }
 
-nav h2{
+nav h2 {
   padding-top: 1%;
   font-size: 300%;
   font-weight: 500;
 }
 
-.searchInput{
+.searchInput {
   display: flex;
   justify-content: center;
   padding-top: 2%;
 }
-.searchInput input{
+.searchInput input {
   width: 95%;
   height: 4rem;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   letter-spacing: 3px;
   padding-left: 3%;
   font-size: 200%;
   border-radius: 12px 12px 12px 12px;
   color: #444;
-  
 }
+
+.transactionTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transactionTable th,
+.transactionTable td {
+  text-align: center;
+  border: 1px solid black;
+}
+
+.transactionTable th{
+  background-color: #f2f;
+  color: white;
+  font-weight: 500;
+}
+
+.transactionTable tr{
+  width: 100%;
+}
+

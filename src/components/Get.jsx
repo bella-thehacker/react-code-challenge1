@@ -11,11 +11,19 @@ function Get() {
       .catch((error) => console.log(error));
   }, []);
 
-  const listTransactions = transactions.map((transaction) => (
-    <Display key={transaction.id} date={transaction.date} 
-    description={transaction.description} category={transaction.category} amount={transaction.amount}/>
-  ));
-  return <div>{listTransactions}</div>;
+  return (
+    <tbody>
+      {transactions.map((transaction) => (
+        <Display
+          key={transaction.id}
+          date={transaction.date}
+          description={transaction.description}
+          category={transaction.category}
+          amount={transaction.amount}
+        />
+      ))}
+    </tbody>
+  );
 }
 
 export default Get;

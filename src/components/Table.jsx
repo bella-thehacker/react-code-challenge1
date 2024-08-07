@@ -4,7 +4,7 @@ import Get from './Get'
 function Table() {
   return (
    <table className='transactionTable'>
-    <tbody>
+    <thead>
         <tr>
             <th>
              Date
@@ -19,8 +19,9 @@ function Table() {
                 Amount
             </th>
         </tr>
+    
+    </thead>
     <Get />
-    </tbody>
    </table>
   )
 }

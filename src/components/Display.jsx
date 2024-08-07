@@ -9,6 +9,7 @@ function Display({date, description, category, amount}) {
     <td>{category}</td>
     <td>{amount}</td>
    </tr>
+   
   )
 }
 

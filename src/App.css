@@ -82,9 +82,11 @@ nav h2 {
   background-color: #f2f;
   color: white;
   font-weight: 500;
+  width: calc(100%/3);
 }
 
-.transactionTable tr{
-  width: 100%;
+.transactionTable td{
+  width: calc(100%/3);
 }
+
 

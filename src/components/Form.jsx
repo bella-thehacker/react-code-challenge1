@@ -1,5 +1,5 @@
 import React from "react";
-import Table from "./Table";
+
 
 function Form() {
   return (
@@ -14,7 +14,7 @@ function Form() {
         <button type="submit">Add Transaction</button>
     </form>
 
-    <Table />
+    
     </main>
 
     

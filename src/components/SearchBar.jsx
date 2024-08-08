@@ -5,7 +5,7 @@ function SearchBar({ setResults }) {
   const [search, setSearch] = useState("");
 
   const fetchData = (value) => {
-    fetch("http://localhost:3000/transactions")
+    fetch("https://bank-of-flatiron-five-ashy.vercel.app/transactions")
       .then((res) => res.json())
       .then((transactions) => {
         const results = transactions.filter((transaction) =>

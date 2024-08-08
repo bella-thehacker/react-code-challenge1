@@ -23,7 +23,7 @@ function Form({ transactions, setTransactions }) {
 
     setIsPending(true);
 
-    fetch("http://localhost:3000/transactions", {
+    fetch("https://bank-of-flatiron-five-ashy.vercel.app/transactions", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

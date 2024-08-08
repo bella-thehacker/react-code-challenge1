@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 function Get({ setTransactions }) {
   useEffect(() => {
-    fetch("http://localhost:3000/transactions")
+    fetch("https://bank-of-flatiron-five-ashy.vercel.app/transactions")
       .then((res) => res.json())
       .then((transactions) => setTransactions(transactions))
       .catch((error) => console.log(error));

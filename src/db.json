@@ -97,6 +97,13 @@
       "description": "tomatoes",
       "category": "groceries",
       "amount": "100"
+    },
+    {
+      "id": "94b4",
+      "date": "2024-08-22",
+      "description": "Movie Tickets",
+      "category": "Entertainment",
+      "amount": "1500"
     }
   ]
 }
